@@ -53,6 +53,10 @@ ul.sidenav li:hover{
     float: left;
     padding: 15px;
   }
+  #marsimg1{
+    align-items: center;
+    width: 4000px;
+  }
   
   div.content {margin-left: 0;}
 }
@@ -71,6 +75,46 @@ ul.sidenav li:hover{
     margin-right: 23px;
 }
 .p1{
-    font-size: 40px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 10vh;
+    position: relative;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: forward;  
+    animation-name: exampleOne;
+}
+
+@keyframes exampleOne {
+  0%   {  top: 30px;}
+  100% {  top:2px;}
+}
+.subHead{
+  color:rgb(243, 115, 69);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 6vh;
+  position: relative;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: forward;  
+  animation-name: exampleTwo;
+}
+@keyframes exampleTwo {
+  0%   {  top: 30px;}
+  100% {  top: 2px;}
+}
+.marsimg1{
+  margin-left: 290px;
+  width: 40%;
+  height: auto;
+  position: absolute;
+  display: flex;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-direction: forward;  
+  animation-name: exampleThree;
+  border-radius: 20px;
+}
+@keyframes exampleThree {
+  0%   {  opacity: 0.3; left: 2px;}
+  100% {  opacity:1; left: 50px;}
 }
