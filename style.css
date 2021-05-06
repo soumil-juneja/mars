@@ -1,120 +1,116 @@
 *{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body{
-    margin: 0;
-    background-color: black;
+  margin: 0;
+  background-color: black;
 }
 
 ul.sidenav{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 17%;
-  background-color: rgb(117, 115, 115);
-  position: fixed;
-  height:100%;
-  overflow: auto;
-  border-width: 4px;
-  border-left-width:0;
-  border-top: 0;
-  border-style: solid;
-  border-color: white;
+list-style-type: none;
+z-index: 1;
+margin: 0;
+padding: 0;
+width: 22%;
+background-color: rgb(117, 115, 115);
+position: fixed;
+height:100%;
+overflow: auto;
+border-width: 4px;
+border-left-width:0;
+border-top: 0;
+border-style: solid;
+border-color: white;
 }
 
-ul.sidenav li{
-  display: block;
-  color: white;
-  height: 50px;
-  padding: 8px 16px;
-  text-decoration: none;
-  text-align: left;
-  margin-left: 5px;
-  margin-top: 15px;
-  font-family: 'Bahnschrift';
-  font-size: 22px;
+ul.sidenav li a{
+display: block;
+color: white;
+height: 40px;
+padding: 8px 16px;
+text-decoration: none;
+text-align: left;
+margin-left: 5px;
+margin-top: 15px;
+font-family: 'Bahnschrift';
+font-size: 32px;
 }
- 
 
-ul.sidenav li:hover{
-  color: rgb(252, 159, 54);
-  transition-duration: 600ms;
+
+ul.sidenav li a:hover{
+color: rgb(252, 159, 54);
+transition-duration: 600ms;
 }
 
 
 @media screen and (max-width: 900px){
-  ul.sidenav {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  
-  ul.sidenav li {
-    float: left;
-    padding: 15px;
-  }
-  #marsimg1{
-    align-items: center;
-    width: 4000px;
-  }
-  
-  div.content {margin-left: 0;}
+ul.sidenav {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+ul.sidenav li {
+  float: left;
+  padding: 15px;
+}
+#marsimg1{
+  align-items: center;
+  width: 4000px;
+}
+
+div.content {margin-left: 0;}
 }
 
 @media screen and (max-width: 760px){
-  ul.sidenav li {
-    text-align: center;
-    float: none;
-    height: 15px;
-  }
+ul.sidenav li {
+  text-align: center;
+  float: none;
+  height: 15px;
+}
 }
 #headContent{
-    color: white;
-    font-family: 'Bahnschrift';
-    text-align: right;
-    margin-right: 23px;
+  color:rgb(243, 115, 69);
+font-family: 'Bahnschrift';
+  text-align: right;
+  margin-right: 23px;
+  height: 400px;
 }
 .p1{
-    font-family: 'Roboto Mono', monospace; 
-    font-size: 10vh;
-    position: relative;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-direction: forward;  
-    animation-name: exampleOne;
-}
-
-@keyframes exampleOne {
-  0%   {  top: 30px;}
-  100% {  top:2px;}
-}
-.subHead{
-  color:rgb(243, 115, 69);
-  font-family: 'Roboto Mono', monospace;
-  font-size: 6vh;
+  /* font-family: 'Roboto Mono', monospace;  */
+  font-family: 'Bahnschrift';
+  font-size: 10vh;
   position: relative;
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-direction: forward;  
-  animation-name: exampleTwo;
+  animation-name: exampleOne;
 }
-@keyframes exampleTwo {
-  0%   {  top: 30px;}
-  100% {  top: 2px;}
+
+@keyframes exampleOne {
+0%   {  top: 30px;}
+100% {  top:2px;}
+}
+.subHead{
+color: white;
+font-family: 'Roboto Mono', monospace;
+font-size: 6vh;
+position: relative;
+
 }
 .marsimg1{
-  margin-left: 290px;
-  width: 40%;
-  height: auto;
-  position: absolute;
-  display: flex;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-direction: forward;  
-  animation-name: exampleThree;
-  border-radius: 20px;
+margin-left: 320px;
+width: 40%;
+height: auto;
+position: absolute;
+display: flex;
+transform: rotateZ(-4deg);
+border: 1em solid #fff;
+border-radius: .25em;
+border-width: 20px;
+box-shadow: 1em 1em 2em .25em rgba(243, 217, 217, 0.2);
 }
-@keyframes exampleThree {
-  0%   {  opacity: 0.3; left: 2px;}
-  100% {  opacity:1; left: 50px;}
+#txt2{
+display: flex;
+float: right;
 }
